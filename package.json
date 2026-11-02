@@ -1,0 +1,15 @@
+{
+  "name": "gallery",
+  "version": "1.0.0",
+  "description": "Memories web project with Three.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host --port 3000",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "three": "^0.182.0",
+    "vite": "^7.3.0"
+  }
+}

@@ -1,0 +1,135 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="fs view" onclick="this.style.display = 'none'; restBlocked(true)"><img src="public/paintings/1.jpg"></div>
+
+    <div class="fs loader">0%</div>
+    <header>
+        <button class="header-btn"><img src="public/icons/menu.svg"></button>
+        <div class="header-content">
+            <div class="links">
+                <div class="choice-focus"></div>
+                <h1 data-link="artist">artist</h1>
+                <h1 data-link="bibliography">bibliography</h1>
+                <h1 data-link="artist-statement">artist statement</h1>
+                <h1 data-link="collections">collections</h1>
+                <h1 data-link="styles">styles</h1>
+                <h1 data-link="contacts">contacts</h1>
+            </div>
+            <div class="display">
+                <div data-link="artist">
+                    <h2>artist</h2>
+                    <p>k. efimidis</p>
+                    <p>artist (painting, drawing)</p>
+                    <p>thessaloniki, greece</p>
+                    <br><br>
+                    <quote>”</quote>
+                    <p class="pnot">“True creation springs from an idea's seed, nurtured in quiet contemplation and shaped by awareness.”</p>
+                </div>
+                <div data-link="bibliography">
+                    <h2>konstanin efimidis</h2>
+                    <p>graduated from moscow university of fine arts (1988)</p>
+                    <p>lives and works in thessloniki</p>
+                    <p>member of russian-greek community</p>
+                    <p>member of international art foundation of russia</p>
+                    <p class="pnot">His works are featured in the Municipal Gallery of Thessaloniki, the Drama Art Gallery, and the Moscow Museum, as well as in public and private collections worldwide</p>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div data-link="artist-statement">
+                    <h2>artist statement (shortly)</h2>
+                    <p>human being is a central theme</p>
+                    <p>exploration of styles</p>
+                    <p>techniques and materials</p>
+                    <p>process (sketches — intuition — abstraction — spontaneity)</p>
+                    <br>
+                    <details>
+                        <summary>from artist</summary>
+                        <br><br>
+                        <quote>”</quote>
+                        <p class="pnot">
+                            “In my art, the human being occupies a central place — their true essence, life principles, emotions, interaction with the world, and the beauty reflected within them. Therefore, my work combines figurative, abstract, surrealistic, and stylized elements. 
+                            <br><br>
+                            I employ various styles and techniques, discovering new forms of self-expression throughout the process — this defines my artistic language. I enjoy exploring different directions, mastering new techniques, and working with diverse materials — oil, acrylic, ink, watercolor, charcoal, pencil, canvas, cardboard, and paper. Through this exploration, I expand my creative boundaries and seek the unknown. I hope this journey inspires others to discover their own unique artistic voice.
+                            <br><br>
+                            I often begin with pencil sketches and drawings to shape my ideas. This process helps me find forms that resonate deeply with my inner state and reflect my present emotional condition. These sketches guide my choice of technique and artistic approach.
+                            <br><br>
+                            When working with colored ink, I proceed intuitively — starting from a single point, spot, or line without knowing where it will lead. An inner force transforms into the desire to create. By deconstructing objective form, I build an abstract resonance of a specific image. In this process, I trust spontaneity and the element of chance.”
+                        </p>
+                    </details>
+                </div>
+                <div data-link="collections">
+                    <h2>permanent collections</h2>
+                    <p>2000 — municipal gallery of thessaloniki</p>
+                    <p>2018 — moscow museum</p>
+                </div>
+                <div data-link="styles">
+                    <h2>styles</h2>
+                    <div class="tags-field"></div>
+                </div>
+                <div data-link="contacts">
+                    <h2>client & sales manager</h2>
+                    <p>alexseygreece@gmail.com</p>
+                    <div class="developer">
+                        <div class="dev-content-wrapper">
+                            <h2>web developer</h2>
+                            <p>maxim.pinewood@gmail.com</p>
+                        </div>
+                        <canvas class="dev-bg"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <aside>
+        <div class="main-content">
+            <img src="public/paintings/1.jpg">
+            <h2>painting</h2>
+            <h4 id="h4s">canvas: oil</h4>
+            <h4 id="h4s">size: XX*YYcm</h4>
+            <h4 id="h4s">price on request</h4>
+            <button class="aside-btn fullscreen-prev"><img src="public/icons/fullscreen.svg"></button>
+            <h4>artist: k. helious</h4>
+        </div>
+        <button class="aside-btn co-gal-el-read-area mra-closed"><img src="public/icons/arrow.svg"></button>
+    </aside>
+
+    <div class="gallery">
+        <div class="gallery-outer-wrapper">
+            <div class="gallery-inner-wrapper">
+                <div class="gal-el-wrap"><img class="mem" src="public/paintings/compressed/1.avif" data-title="maestro" data-canvas="oil" data-size="45 * 59"></div>
+                <div class="gal-el-wrap"><img class="mem" src="public/paintings/compressed/2.avif" data-title="portrait" data-canvas="oil" data-size="45 * 80"></div>
+                <div class="gal-el-wrap"><img class="mem" src="public/paintings/compressed/3.avif" data-title="Trio" data-canvas="oil" data-size="90 * 100"></div>
+                <div class="gal-el-wrap"><img class="mem" src="public/paintings/compressed/4.avif" data-title="gifts of nature" data-canvas="oil" data-size="113 * 160"></div>
+                <div class="gal-el-wrap"><img class="mem" src="public/paintings/compressed/5.avif" data-title="Bull" data-canvas="oil" data-size="90 * 140"></div>
+                <div class="gal-el-wrap"><img class="mem" src="public/paintings/compressed/6.avif" data-title="thinker, conflict" data-canvas="oil" data-size="80 * 100"></div>
+                <div class="gal-el-wrap"><img class="mem" src="public/paintings/compressed/7.avif" data-title="thinker 2" data-canvas="oil" data-size="100 * 120"></div>
+                <div class="gal-el-wrap"><img class="mem" src="public/paintings/compressed/8.avif" data-title="thinker, anticipation" data-canvas="oil" data-size="90 * 100"></div>
+                <div class="gal-el-wrap"><img class="mem" src="public/paintings/compressed/9.avif" data-title="thinker 1" data-canvas="oil" data-size="50 * 60"></div>
+                <div class="gal-el-wrap"><img class="mem" src="public/paintings/compressed/10.avif" data-title="awakening" data-canvas="oil on linen" data-size="100 * 100"></div>
+                <div class="gal-el-wrap"><img class="mem" src="public/paintings/compressed/11.avif" data-title="awakening to inspiration" data-canvas="oil" data-size="80 * 100"></div>
+                <div class="gal-el-wrap"><img class="mem" src="public/paintings/compressed/12.avif" data-title="silence" data-canvas="oil on linen" data-size="110 * 150"></div>
+                <div class="gal-el-wrap"><img class="mem" src="public/paintings/compressed/13.avif" data-title="mask" data-canvas="oil" data-size="50 * 60"></div>
+                <div class="gal-el-wrap"><img class="mem" src="public/paintings/compressed/14.avif" data-title="thinker" data-canvas="oil on linen" data-size="80 * 100"></div>
+                <div class="gal-el-wrap"><img class="mem" src="public/paintings/compressed/15.avif" data-title="pilgrim" data-canvas="oil on linen" data-size="120 * 130"></div>
+                <div class="gal-el-wrap"><img class="mem" src="public/paintings/compressed/16.avif" data-title="Pegasus" data-canvas="oil" data-size="10 * 140"></div>
+                <div class="gal-el-wrap"><img class="mem" src="public/paintings/compressed/17.avif" data-title="Violins" data-canvas="oil on linen" data-size="40 * 60"></div>
+                <div class="gal-el-wrap"><img class="mem" src="public/paintings/compressed/18.avif" data-title="self-portrait 1994" data-canvas="oil on linen" data-size="50 * 70"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="action-help">
+        <img src="public/icons/scroll.svg">
+    </div>
+
+    <script src="src/main.js"></script>
+</body>
+</html>
+
